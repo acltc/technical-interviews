@@ -1,0 +1,1 @@
+Make a method that takes in an array and reverses it. Catch: you're not allowed to declare a new array or duplicate the existing array. Also, you can only iterate through the array once.

@@ -1,0 +1,9 @@
+We would like you to mock up a simple AngularJS application that can consume the JSON shown below (feel free to hardcode the JSON payload as a variable or however you'd like) and render it in a single view. The view can look however you want as you won't be judged on HTML / CSS skills.
+ 
+Here is a JSON package that contains three recipes that you should use when building your app.
+ 
+"[{\"title\":\"Jambalaya\",\"instructions\":\"Heat a large pot over medium-high heat. Add bacon, and cook until crisp. Remove bacon pieces with a slotted spoon, and set aside. Add celery, bell pepper, and onion to the bacon drippings, and cook until tender.\",\"time\":\"25 minutes\",\"rating\":\"5\",\"image\":\"http://freeguitarmentor.com/wp-content/uploads/2011/07/jambalaya_dish.jpg\"},{\"title\":\"Shrimp Scampi\",\"instructions\":\"Bring a large pot of salted water to a boil. Stir in pasta and return pot to boil. Cook until al dente. Drain well. Melt butter in a large saucepan over medium heat. Stir in garlic and shrimp. Cook, stirring constantly, for 3 to 5 minutes.\",\"time\":\"35 minutes\",\"rating\":\"3\",\"image\":\"http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2013/2/8/0/IL0507ZH_shrimp-scampi-recipe_s4x3.jpg\"},{\"title\":\"Omelette\",\"instructions\":\"Crack the eggs into a large resealable freezer bag. Press out most of the air, and seal. Shake or squeeze to beat the eggs. Open the bag, and add the ham, cheese, onion, green pepper, tomato, salsa, and mushrooms. Squeeze out as much of the air as you can, and seal the bag.\",\"time\":\"15 minutes\",\"rating\":\"4\",\"image\":\"http://amybsherman.com/images/springomelette.JPG\"}]"
+ 
+Once you have created the AngularJS app. Please add a Jasmine test to your application and make it pass. https://github.com/jasmine/jasmine 
+ 
+Your finished version can be pushed to GitHub for viewing.

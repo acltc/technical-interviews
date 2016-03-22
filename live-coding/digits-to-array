@@ -1,0 +1,5 @@
+Take a number and convert each digit into an individual element within an array. You must not convert the data to a string at any point in the process.
+
+Example:
+
+34,592,129,909 => [3,4,5,9,2,1,2,9,9,0,9]
