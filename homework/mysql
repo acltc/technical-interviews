@@ -1,0 +1,52 @@
+A: Table Structure
+
+A database system needs to model the following:
+Company: The system manages data for many Companies. Each Company has a name attribute.
+Each Company also offers one or more Medical Plans to its employees.
+Medical Plan: Each Medical Plan has a name attribute and belongs to exactly one Sponsor. Each Medical Plan is available to one or more Employee Groups.
+Employee Group: Each Employee Group has a name attribute and belongs to exactly one Company. Each Employee Group has access to one or more Medical Plans.
+1. Write SQL to create the tables for these entities.
+2. Write SQL to retrieve all of the Medical Plans for a given Company.
+3. Write SQL to retrieve all of the Employee Groups for a given Company.
+4. Write SQL to retrieve all of the Employee Groups who may access a given Medical Plan.
+5. Write SQL to retrieve all of the Medical Plans that may be accessed by a given Employee Group.
+
+B: Writing Queries
+The following tables and data are defined in a schema:
+
+select * from department;
+
+department_id   |  name
+10                 Sales
+20                 Marketing
+30                 Development
+40￼                Administration
+
+select * from employee;
+
+employee_id  | name         | department_id
+1              Washington     10
+2              Adams          10
+3              Jefferson      20  
+4              Monroe         20
+5              Jackson        20
+6              Lincoln        30
+7              Johnson        30 
+8              Madison        30 
+
+￼Write SQL to return the following output:
+
+department_id | name           | employee_id | name         | department_id
+10              Sales            1             Washington     10
+10              Sales            2             Adams          10
+20              Marketing        3             Jefferson      20
+20              Marketing        4             Monroe         20
+20              Marketing        5             Jackson        20
+30              Development      6             Lincoln        30
+30              Development      7             Johnson        30
+30              Development      8             Madison        30
+40              Administration   NULL          NULL           NULL
+
+
+C: Optimization
+A query is performing more slowly than you would like. What is the first thing you would research when determining how to speed it up?

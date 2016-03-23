@@ -1,0 +1,48 @@
+Part 1: Custom Math
+
+This project involves 2 phases. You will be creating a simple JavaScript utility library to work with integers. The library will be partitioned into modules/classes. The module hierarchy should follow an inheritance chain design, with derived modules having an "is a" relationship to the modules they extend. Your methods should build upon other methods in your library.
+
+Phase 1: Create a basic math class that implements the following methods (the utility library only needs to work with integers; we won't even try floating point numbers):
+• add(v1, v2) - returns the integer sum of adding integers v1 and v2
+• subtract(v1, v2) - returns the integer difference between v1 and v2 (v2 from v1)
+• multiply(v1, v2) - returns the integer product of v1 and v2
+Phase 1 RULES:
+
+• NO LIBRARIES/FRAMEWORKS ALLOWED, use only plain-old, built-in, vanilla JavaScript.
+• DO NOT USE built in conversion functions (Number, parseInt, parseFloat, etc)
+• You may ONLY use addition and unary negation arithmetic operators, that is "1 + 1" and "-2" (unary
+negation is NOT subtraction) All other arithmetic operators are off limits; including compound
+assignment operators.
+• Comparison operators are allowed if necessary.
+• Functions should be implemented as instance methods
+• This class must be named "BasicMath".
+• Your classes will be defined globally, but you must not create any additional global variables in your library implementation.
+• Write your implementations in the file 'custom-math.js'
+• Create another method divide(v1, v2) that returns the integer quotient of v1 divided by v2 (Note:
+division by 0 should return JavaScript’s number constant Infinity)
+Example usage:
+Your phase 1 class should be able to be used as in the following example:
+
+var basicMath = new BasicMath();
+var sum = basicMath.add(1, 2); // sum === 3
+var difference = basicMath.subtrat(2, 3); // difference === -1
+var product = basicMath.multiply(2, 5); // product === 10
+
+￼Phase 2: Create an advanced math class that extends the basic math class and implements the following methods. (again, these are integer only implementations)
+• posPower(base, exponent) - returns the integer power of 'base' raised to 'exponent' - you only need to support zero and positive integer exponents. Negative exponents should return zero (0), and exponents of 0 always return positive 1.
+• add(v1, ... , vN) - returns integer sum of a variable number of integer arguments
+• isRightTriangle(a, b, c) - given the positive integer lengths of three different sides of a triangle, where
+c is the hypotenuse side, return boolean 'true' if the triangle is a "right triangle" according to Pythagoras' theorem, and 'false' otherwise. Negative arguments cause a return of false. There are no negative lengths.
+Phase 2 RULES:
+• Please follow the same rules as in phase 1!
+• DO NOT USE JavaScript’s 'Math.pow', 'Math.sqrt', or trigonometric functions. • This class must be named "AdvancedMath"
+• Tip: leverage your previous work.
+Example usage:
+Your phase 2 class should be able to be used as in the following example:
+
+var advancedMath = new AdvancedMath();
+var sum = advancedMath.add(2, 2, 3); // sum === 7
+var power = advancedMath.posPower(2, 5); // power === 32
+var rt = advancedMath.isRightTriange(3, 4, 5); // rt === true
+var product = advancedMath.multiply(2, 5); // product === 10
+￼

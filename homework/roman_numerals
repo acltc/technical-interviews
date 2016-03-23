@@ -1,0 +1,7 @@
+The Roman numerals for 1 through 10 are I, II, III, IV, V, VI, VII, VIII, IX, and X. The Roman numerals for 20, 30, 40, 50, 60, 70, 80, 90 and 100 are XX, XXX, XL, L, LX, LXX, LXXX, XC and C. The Roman numeral for any two-digit number can be constructed by concatenating the numeral for its tens and the numeral for its ones.
+
+Examples:
+
+22 is 20 + 2 = "XX" + "II" = "XXII" 47 is 40 + 7 = "XL" + "VII" = "XLVII" 99 is 90 + 9 = "XC" + "IX" = "XCIX"
+
+Using the language of your choice, write a function that accepts a Roman numeral string a returns the integer equivalent of that string.
