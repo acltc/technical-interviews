@@ -9,7 +9,7 @@ course columns:     course_id, course_name, state
 enrollment columns: user_id,   course_id,   state
 For all data types, state is in ['active', 'deleted']. The user_id and course_id are globally unique, so a new id means a new record, an id they've seen before means an update to an existing record.
 
-Attached is a .zip of CSVs (found in the assets folder called CSV.zip). You should write a program that processes the files in order. You'll need to determine the type of data in the csv based on the headers in the first row. At the end, you need to spit out a list of active courses, and for each course a list of active students with active enrollments in that course.
+Attached is a .zip of CSVs (found in this folder called CSV.zip). You should write a program that processes the files in order. You'll need to determine the type of data in the csv based on the headers in the first row. At the end, you need to spit out a list of active courses, and for each course a list of active students with active enrollments in that course.
 
 Some gotchas:
 

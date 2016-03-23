@@ -1,0 +1,23 @@
+Given the attached addresses.json (found in this folder), use code to construct a single-line MySQL insert query putting all given data PLUS latitude & longitude derived from addresses by a public geocoding API (http://maps.googleapis.com/maps/api/geocode/json?address=512%20W%20Higgins%20Rd,%20Park%20Ridge,%20IL%2060068) into a table defined like so:
+
+CREATE TABLE `location` (
+  `id` int(11) NOT NULL DEFAULT '0',
+  `name` varchar(255) DEFAULT NULL,
+  `city` varchar(255) DEFAULT NULL,
+  `state` varchar(255) DEFAULT NULL,
+  `zip` varchar(255) DEFAULT NULL,
+  `latitude` int(11) DEFAULT NULL,
+  `longitude` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
+
+Reply with an md5 of the MySQL query, the query itself, and any code you used to construct it.
+
+To guarantee a deterministic hashing:
+insert records in ascending ID order
+floor all latitude & longitude values
+use the shortest insert query format possible, double-quote all values, and lowercase everything but the inserted values
+do include a semicolon at the end of the query
+do include a space after the "values" keyword
+do not state column names after the table in the query
+do not include any additional formatting or parameters in the geocoding API beyond the linked example
