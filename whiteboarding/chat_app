@@ -1,0 +1,1 @@
+Sketch out a basic schematic for a chat application (like AOL instant messenger). Now modify it so that you can have a chat room with as many people as you want. Now modify it so it can tell you if a message is seen or not. What kind of HTTP requests are happening at each step?
